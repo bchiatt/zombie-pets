@@ -1,4 +1,84 @@
+@import url(http://fonts.googleapis.com/css?family=Frijole);
+@import url(http://fonts.googleapis.com/css?family=Coustard);
+
 body{
-  background-color: #ffdc00;
+  background: url(img/brickwall.png);
+  background-size: fill;
+  font-family: 'Coustard', serif;
 }
 
+h1 {
+  font-family: 'Frijole', cursive;
+  font-size: 5em;
+  text-align: center;
+}
+
+h4 {
+  font-family: 'Frijole', cursive;
+}
+
+input.ng-invalid{
+  background-color: RGBA(240, 173, 78, 1);
+}
+
+#cage {
+  border: 3px dashed black;
+  padding: 10px;
+  width: 600px;
+  margin: 50px, auto;
+  text-align: center;
+
+  #player1, #player2 {
+    display: inline-block;
+    margin: auto;
+  }
+
+  button{
+    display: inline-block;
+    margin: auto;
+  }
+}
+
+.combo {
+  position: relative;
+  border: 1px red dashed;
+  display: inline-block;
+  border-radius: 7px;
+  margin: auto, 10px, auto, 10px;
+  width: 450px;
+  padding: 0;
+}
+
+.weapon, .pet {
+  display: inline-block;
+  margin: 10px;
+  height: 300px;
+  width: 200px;
+  background-size: cover;
+  border-radius: 7px;
+  font-family: monospace;
+  font-size: 2em;
+  color: rgb(87, 69, 73);
+  position: relative;
+  padding: 10px;
+
+  .name {
+  }
+
+  .damage, .pethealth{
+    position: absolute;
+    bottom: 5px;
+    color: rgb(145, 11, 11);
+    font-size: 1.6em;
+  }
+}
+
+.buttons {
+  width: 100px;
+  margin: auto;
+  padding: 5px;
+
+  button {
+    margin: 5px;
+  }
+}
